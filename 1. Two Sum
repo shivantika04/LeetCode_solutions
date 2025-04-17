@@ -6,3 +6,8 @@ class Solution:
             if diff in seen:
                 return [seen[diff], i]
             seen[n] = i
+            
+n = [2, 7, 11, 15]
+t = 9
+solution = Solution()
+print(solution.twoSum(n, t))
