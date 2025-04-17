@@ -1,0 +1,18 @@
+class Solution:
+    def containsDuplicate(self, nums: list[int]) -> bool:
+        >> solution 1
+        
+        # seen = set()
+        # for n in nums:
+        #     if n in seen:
+        #         return True
+        #     seen.add(n)
+        # return False
+        
+        >> solution 2
+        return len(set(nums)) < len(nums)
+    
+solution = Solution()
+n = [1, 2, 3, 4, 5, 1]
+# n = [1, 2, 3, 4, 5]
+print(solution.containsDuplicate(n))
